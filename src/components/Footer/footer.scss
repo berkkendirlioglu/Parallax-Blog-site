@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+.foot{
+    width: 100%;
+    height: auto;
+    background:#508eb5;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        z-index: 999;
+        top: 0px;
+        left: 0;
+        background: linear-gradient(to top, transparent,#508eb5);
+        pointer-events: none;
+    }
+    .section{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 99;
+        padding: 3rem 0 0 0;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.5);
+
+        }
+        .footer-img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 300px;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .left-crab{
+            position: absolute;
+            left: 10rem;
+            top: 18rem;
+            z-index: -1;
+            width: 150px;
+        }
+        .container{
+            height: 100%;
+            position: relative;
+            z-index: 999999;
+            padding: 10rem 0 0 0;
+            .row{
+                height: 100%;
+                .footer-list{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10rem 0 0 0;
+                    .list-items{
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        .list-item{
+                            list-style: none;
+                            a{
+                                color:white;
+                                text-decoration: none;
+                                transition: all .1s linear;
+                                &:hover{
+                                    color: rgba(255,255,255,.4);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width:1400px){
+    .foot{
+        .section{
+            .left-crab{
+                width: 130px;
+                top: 70%;
+            }
+        }
+    }
+}
+@media (max-width:1050px){
+    .foot{
+        .section{
+            .left-crab{
+                width: 120px;
+                top: 75%;
+                left: 10%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .foot{
+        .section{
+            .footer-img{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .left-crab{
+                position: absolute;
+                left: 50%;
+                top: 72%;
+                transform: translate(-50%, -50%);
+                width: 120px;
+            }
+            .container{
+                padding: 0;
+                .row{
+                    .footer-list{
+                        padding: 5rem 0 0 0;
+                        .list-items{
+                            margin:0 0 5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

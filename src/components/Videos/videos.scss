@@ -1,0 +1,35 @@
+.videos{
+    width: 100%;
+    height: auto;
+    background:#508eb5;
+    .container{
+        width: 100%;
+        height: 100%;
+        .videos-container{
+            width: inherit;
+            height: inherit;   
+            .row{
+                width: inherit;
+                height: inherit;
+                .hero-video{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .hero-video-container{
+                        width: 1125px;
+                        height: 720px;
+                        iframe{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .alt-videos{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
