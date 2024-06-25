@@ -1,6 +1,12 @@
 import { useRef } from 'react'
 import {motion, useScroll, useTransform} from 'framer-motion';
 import './header.scss'
+import bg from '../../../public/images/bg.png';
+import lake from '../../../public/images/lake.png';
+import lIsland from '../../../public/images/left-island.png';
+import rIsland from '../../../public/images/right-island.png';
+import montain from '../../../public/images/montain.png';
+import mMontain from '../../../public/images/middle-montain.png';
 
 const Hero = () => {
     const ref = useRef(null);
@@ -19,12 +25,12 @@ const Hero = () => {
         <div className='hero-title'>
           <h2 id="heroText"><span>Welcome to my</span><br />Journey</h2>
         </div>
-        <img id="bg" src="../../../assets/bg.png" alt="" />
-        <img id="lake" src="../../../assets/lake.png" alt="" />
-        <motion.img style={{x:backgroundY}} id="l-island" src="../../../assets/left-island.png" alt="" />
-        <motion.img style={{x:backgroundX}} id="r-island" src="../../../assets/right-island.png" alt="" />
-        <motion.img style={{y:backgroundYDiff}} id="montain" src="../../../assets/montain.png" alt="" />
-        <motion.img style={{y:backgroundY}} id="m-montain" src="../../../assets/middle-montain.png" alt="" />
+        <img id="bg" src={bg} alt="" />
+        <img id="lake" src={lake} alt="" />
+        <motion.img style={{x:backgroundY}} id="l-island" src={lIsland} alt="" />
+        <motion.img style={{x:backgroundX}} id="r-island" src={rIsland} alt="" />
+        <motion.img style={{y:backgroundYDiff}} id="montain" src={montain} alt="" />
+        <motion.img style={{y:backgroundY}} id="m-montain" src={mMontain} alt="" />
     </header>
   )
 }
