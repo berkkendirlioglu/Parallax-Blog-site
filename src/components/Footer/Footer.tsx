@@ -1,4 +1,6 @@
 import './footer.scss';
+import crab from "../../../public/images/left-crab.png"
+import beach from "../../../public/images/beach.png"
 
 const Footer = () => {
   return (
@@ -6,8 +8,8 @@ const Footer = () => {
       <footer className='foot'>
         <div className="section">
           
-          <img className='footer-img' src="../../../assets/beach.png" alt="beach" />
-          <img className='left-crab' src="../../../assets/left-crab.png" alt="crab" />
+          <img className='footer-img' src={beach} alt="beach" />
+          <img className='left-crab' src={crab} alt="crab" />
 
           <div className="container">
             <div className="row">
