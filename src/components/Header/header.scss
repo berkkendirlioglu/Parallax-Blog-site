@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image: url(/assets/bg.png);
+    background-image: url(/public/images/bg.png);
     &::before{
         content: '';
         position: absolute;
@@ -78,4 +78,14 @@
         z-index: 7;
     }
     
+}
+
+@media (max-width: 1366px){
+    .hero{
+        .hero-title{
+            #heroText{
+                top:17%!important;
+            }
+        }
+    }
 }
