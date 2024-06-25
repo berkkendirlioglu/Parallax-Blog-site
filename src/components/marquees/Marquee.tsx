@@ -1,4 +1,3 @@
-import React from 'react'
 import './marquee.scss'
 
 const Marquee = ({text}:{text:string}) => {

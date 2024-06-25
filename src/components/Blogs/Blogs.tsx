@@ -1,4 +1,3 @@
-import React from "react";
 import "./blogs.scss";
 import BlogCard from "./PostsCards/BlogCards/BlogCard";
 import RBlogCard from "./PostsCards/RBlogCard/RBlogCard";

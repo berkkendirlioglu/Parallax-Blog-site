@@ -1,4 +1,3 @@
-import React from 'react'
 import './rblogcard.scss';
 
 const RBlogCard = ({imgUrl}: {imgUrl:string}) => {

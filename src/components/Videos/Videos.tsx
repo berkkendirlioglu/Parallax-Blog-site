@@ -1,4 +1,3 @@
-import React from "react";
 import "./videos.scss";
 
 const Videos = () => {
